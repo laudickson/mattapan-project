@@ -7,6 +7,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 # resources
-Some resources used for research in building this app
-https://www.areavibes.com/boston-ma/mattapan/livability/
-https://en.wikipedia.org/wiki/Mattapan
+Some resources used for research in building this app:
+* https://www.areavibes.com/boston-ma/mattapan/livability/
+* https://en.wikipedia.org/wiki/Mattapan
+
+# setup
+`git clone` the repo
+`yarn` to install dependencies
+`yarn run start` to boot up dev server hosting on port 3000

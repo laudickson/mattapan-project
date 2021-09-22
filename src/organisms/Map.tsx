@@ -6,6 +6,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibGF1ZGlja3NvbiIsImEiOiJja3RrYXpiajIwbXo1MnZxe
 const MapContainer = styled.div`
 	display: flex;
 	justify-content: center;
+	padding: ${props => props.theme.spacing.l} 0;
+	height: 50vh;
+	width: 80vw;
 
 	> .map {
 		height: 100%;
@@ -14,7 +17,7 @@ const MapContainer = styled.div`
 	}
 `;
 
-export default function Map () {
+export default function Map() {
 	const mapContainer = useRef<HTMLDivElement | null>(null);
 	const map = useRef<mapboxgl.Map | null>(null);
 	const [lng, setLng] = useState(-70.9);
@@ -47,8 +50,8 @@ export default function Map () {
 	});
 
 	return (
-	<MapContainer>
-		<div ref={ mapContainer } className="map" />
-	</MapContainer>
+		<MapContainer>
+			<div ref={mapContainer} className="map" />
+		</MapContainer>
 	);
 }
